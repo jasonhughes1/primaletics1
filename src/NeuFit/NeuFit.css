@@ -1,0 +1,68 @@
+.neufit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.neufitlogo {
+  margin-top: 50px;
+  width: 200px;
+}
+
+.neufitinfo {
+  width: 100%;
+}
+
+.neufit-text {
+  line-height: 2;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.neurology-text {
+  color: white;
+  background-color: #1A9347;
+  width: 100%;
+  text-align: center;
+}
+
+.neubie {
+  width: 200px;
+}
+
+.neufit-link {
+  font-size: 36px;
+}
+
+.text-image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .neufit-text {
+    width: 90%;
+    font-size: 22px;
+  }
+  .image-1,
+  .image-2,
+  .image-3 {
+    width: 90%;
+  }
+  .text-image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .neurology-text {
+    margin-top: 20px;
+  }
+}
