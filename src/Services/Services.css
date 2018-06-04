@@ -1,5 +1,5 @@
 .services-main-container {
-  background-color: #C1DBE3;
+  background-color: #022B3A;
 }
 
 .services-container {
@@ -12,11 +12,14 @@
 }
 
 .services-title-1,
-.services-title-2 {
+.services-title-2,
+.services-title-3 {
+  color: white;
   padding-bottom: 20px;
 }
 
 .services-title {
+  color: white;
   padding: 50px 0px 20px 0px;
   text-align: center;
   font-size: 50px;
@@ -28,6 +31,7 @@
 .services-par-3,
 .list-item {
   font-size: 20px;
+  color: white;
 }
 
 .primaletics-program-container {
@@ -66,7 +70,7 @@
 }
 
 .grey-box {
-  background-color: #759EB8;
+  background-color: #08415C;
   width: 90%;
   margin-bottom: 20px;
 }
