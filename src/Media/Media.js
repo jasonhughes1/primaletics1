@@ -12,9 +12,9 @@ return (
   <div>
     <div className='instagram-container'>
       <h2 className='instagram-text'>Recent Instagram Posts</h2>
-      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/d5254224f0ef5ffaacdbe8af90689fbb.html" scrolling="no" allowtransparency="true" className="lightwidget-widget"></iframe>
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/88e916761aaf5d3bab9b8e3d4722152f.html" scrolling="no" allowtransparency="true" className="lightwidget-widget"></iframe>
     </div>
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/459867bee7c859b580e9f3919904e6f2.html" scrolling="no" allowtransparency="true" className="lightwidget-widget-mobile"></iframe>
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/88e916761aaf5d3bab9b8e3d4722152f.html" scrolling="no" allowtransparency="true" className="lightwidget-widget-mobile"></iframe>
 
   </div>
 )

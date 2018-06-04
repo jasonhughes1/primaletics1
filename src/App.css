@@ -1,5 +1,5 @@
 * {
-  font-family: 'Acme', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 a {
@@ -10,5 +10,5 @@ a {
 
 a:focus {
   text-decoration: none;
-  color: #9C0E1D;
+  color: white;
 }

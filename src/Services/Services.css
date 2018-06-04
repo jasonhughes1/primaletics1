@@ -1,3 +1,7 @@
+.services-main-container {
+  background-color: #C1DBE3;
+}
+
 .services-container {
   margin-top: 50px;
   padding-top: 40px;
@@ -13,7 +17,7 @@
 }
 
 .services-title {
-  margin: 50px 0px 20px 0px;
+  padding: 50px 0px 20px 0px;
   text-align: center;
   font-size: 50px;
 }
@@ -62,7 +66,7 @@
 }
 
 .grey-box {
-  background-color: #E5E7E6;
+  background-color: #759EB8;
   width: 90%;
   margin-bottom: 20px;
 }

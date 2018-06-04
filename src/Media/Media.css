@@ -1,5 +1,6 @@
 
 .instagram-container {
+  background-color: #C1DBE3;
   display: flex;
   flex-direction: column;
 }

@@ -3,6 +3,7 @@
 }
 
 .header-section {
+  background-color: #5C6B73;
   display: flex;
   justify-content: space-between;
 }
@@ -24,8 +25,8 @@
 
 .logo {
   border: 2px solid black;
-  height: 100px;
-  width: 100px;
+  height: 40px;
+  width: 40px;
   margin: 0;
   margin-left: 10px;
 }
