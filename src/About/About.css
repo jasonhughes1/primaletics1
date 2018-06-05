@@ -23,20 +23,41 @@
 }
 
 .bios {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
   color: #F9F9F9;
   font-weight: bold;
   width: 90%;
-  margin-top: 50px;
+
 }
 
 .marisa-name,
-.mike-name {
+.mike-name,
+.james-name {
   margin: 40px 0px 40px 0px;
 }
 
 .bio-text {
   padding-bottom: 40px;
 }
+
+.marisa-container {
+  margin-top: 0;
+}
+
+.james-container {
+  margin-top: 0;
+}
+
+.marisa-container,
+.mike-container,
+.james-container {
+  align-self: flex-start;
+  width: 30%;
+}
+
 
 
 @media screen and (max-width: 700px) {
@@ -51,6 +72,18 @@
   }
 
   .instagram-text {
+    width: 90%;
+  }
+
+  .bios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .marisa-container,
+  .mike-container,
+  .james-container {
+    align-self: flex-start;
     width: 90%;
   }
 }
