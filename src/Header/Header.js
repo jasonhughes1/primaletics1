@@ -6,81 +6,45 @@ import React, { Component } from 'react';
   class Header extends Component {
     constructor() {
       super();
+}
 
-      this.state = {
-        showMenu: false,
-      };
-      this.showMenu = this.showMenu.bind(this);
-      this.closeMenu = this.closeMenu.bind(this);
-    }
-
-    showMenu(event) {
-      event.preventDefault();
-
-
-    this.setState({ showMenu: true}, () => {
-      document.addEventListener('click', this.closeMenu);
-    });
-  }
-
-    closeMenu(event) {
-      if (!this.dropdownMenu.contains(event.target)) {
-        this.setState({ showMenu: false}, () => {
-          document.removeEventListener('click', this.closeMenu);
-        });
-      }
-    }
-    render() {
-
-
-    return (
-        <div className='header-section'>
-          <div className='header-left'>
-            <h2 className='header-title'>Primaletics</h2>
-            <img className="logo" src={require('../assets/bear.png')} alt="logo" />
+      render() {
+        return(
+          <div>
+            <div class="container">
+              <nav class="nav nav-pills flex-column flex-sm-row">
+                <h1 className='header-title'>Primaletics</h1>
+                <NavLink to='/' className="flex-sm-fill text-sm-center" href='#'><strong>Home</strong> </NavLink>
+                <NavLink to='/about' className='flex-sm-fill text-sm-center' href='#'><strong>About</strong> </NavLink>
+                <NavLink to='/services' className='flex-sm-fill text-sm-center' href='#'><strong> Services</strong></NavLink>
+                <NavLink to='/media' className='flex-sm-fill text-sm-center'  href='#'> Media </NavLink>
+                <NavLink to='/primaleticspodcast' className='flex-sm-fill text-sm-center'  href='#'> Primaletics Podcast </NavLink>
+                <NavLink to='/neufit' className='flex-sm-fill text-sm-center'  href='#'> NeuFit </NavLink>
+            </nav>
           </div>
-          <div className='header-right header-right-mobile'>
-            <div className='drop-down-container'>
-              <button onClick={this.showMenu}>
-                <img className="menulogo" src={require('../assets/menu.svg')} alt="logo" />
-              </button>
-              {
-                this.state.showMenu
-                ? (
-                  <div
-                    className="menu" ref={(element) => {
-                      this.dropdownMenu = element;
-                    }}>
-                    <div className='navlink-container'>
-                      <NavLink to='/' className='nav'> Home </NavLink>
-                      <NavLink to='/about' className='nav'> About </NavLink>
-                      <NavLink to='/services' className='nav'> Services </NavLink>
-                      <NavLink to='/media' className='nav'> Media </NavLink>
-                      <NavLink to='/primaleticspodcast' className='nav'> Primaletics Podcast </NavLink>
-                      <NavLink to='/neufit' className='nav'> NeuFit </NavLink>
-                    </div>
-                  </div>
-
-                )
-                : (
-                  null
-                )
-
-              }
+            <div class="pos-f-t">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                  <h1 className='drop-down-title'>Primaletics</h1>
+                  <div className='drop-down-links'>
+                  <NavLink to='/' className="flex-sm-fill text-sm-center" href='#'><strong>Home</strong> </NavLink>
+                  <NavLink to='/about' className='flex-sm-fill text-sm-center' href='#'><strong>About</strong> </NavLink>
+                  <NavLink to='/services' className='flex-sm-fill text-sm-center' href='#'><strong> Services</strong></NavLink>
+                  <NavLink to='/media' className='flex-sm-fill text-sm-center'  href='#'> Media </NavLink>
+                  <NavLink to='/primaleticspodcast' className='flex-sm-fill text-sm-center'  href='#'> Primaletics Podcast </NavLink>
+                  <NavLink to='/neufit' className='flex-sm-fill text-sm-center'  href='#'> NeuFit </NavLink>
+                </div>
+                </div>
+              </div>
+              <nav class="navbar navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
             </div>
           </div>
-          <div className='navlink-container-desktop'>
-            <NavLink to='/' className='nav'> Home </NavLink>
-            <NavLink to='/about' className='nav'> About </NavLink>
-            <NavLink to='/services' className='nav'> Services </NavLink>
-            <NavLink to='/media' className='nav'> Media </NavLink>
-            <NavLink to='/primaleticspodcast' className='nav'> Primaletics Podcast </NavLink>
-            <NavLink to='/neufit' className='nav'> NeuFit </NavLink>
-          </div>
-        </div>
-
-      )
+        )
+      }
     }
-  }
 
 export default Header;

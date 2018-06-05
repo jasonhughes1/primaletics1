@@ -3,6 +3,7 @@
 }
 
 a {
+  color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight: bolder;
@@ -10,5 +11,5 @@ a {
 
 a:focus {
   text-decoration: none;
-  color: #08415C;
+  color: black;
 }

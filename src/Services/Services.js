@@ -1,10 +1,15 @@
 import React from 'react';
 import css from './Services.css';
-
+import { Route } from 'react-router-dom';
+import Header from '../Header/Header';
 
 const Services = () => {
   return(
     <div className='services-main-container'>
+      <Route path='/' component={Header} />
+      <div className='logo-container'>
+        <img className="logo" src={require('../assets/bear.png')} alt="logo" />
+      </div>
       <h1 className='services-title'>What We Offer</h1>
       <div className='grey-box'>
         <div className='services-container'>

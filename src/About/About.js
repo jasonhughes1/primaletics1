@@ -4,6 +4,8 @@ import css from './About.css';
 import { NavLink } from 'react-router-dom';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+import Header from '../Header/Header';
+import { Route } from 'react-router-dom';
 
 class About extends React.Component {
   render() {
@@ -22,7 +24,10 @@ class About extends React.Component {
 
   return (
     <div className='image-display'>
-
+      <Route path='/' component={Header} />
+      <div className='logo-container'>
+        <img className="logo" src={require('../assets/bear.png')} alt="logo" />
+      </div>
       <h3 className='about-title'>A little about us...</h3>
       <Slider {...settings}>
         <div className='image-0'>
