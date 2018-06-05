@@ -1,6 +1,11 @@
+.all-neufit {
+  background-color:  #022B3A;
+}
+
 .neufit-container {
   display: flex;
   flex-direction: column;
+  background-color: lightgrey;
 }
 
 .neufitlogo {
